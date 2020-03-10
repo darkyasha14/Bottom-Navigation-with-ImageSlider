@@ -9,10 +9,10 @@ export class App extends Component {
    super(props);
    this.state = {
      images : [
-       require('./assets/img1.jpg'),
-       require('./assets/img2.jpg'),
-       require('./assets/img3.jpg'),
-       require('./assets/img4.png')
+       require('../../assets/img1.jpg'),
+       require('../../assets/img2.jpg'),
+       require('../../assets/img3.jpg'),
+       require('../../assets/img4.png')
      ]
    }
  }
@@ -39,19 +39,19 @@ export class App extends Component {
                 <ScrollView horizontal={true}
                 showsHorizontalScrollIndicator={false}>
                     <ItemPopular imageUri={require
-                        ('./assets/img2.jpg')}
+                        ('../../assets/img2.jpg')}
                         genre="Fantasy"
                         name="Fate Grand/Order"/>
                     <ItemPopular imageUri={require
-                    ('./assets/img1.jpg')}
+                    ('../../assets/img1.jpg')}
                     genre="Fantasy"
                     name="Fate Grand/Order"/>
                         <ItemPopular imageUri={require
-                    ('./assets/img3.jpg')}
+                    ('../../assets/img3.jpg')}
                     genre="Fantasy"
                     name="Fate Grand/Order"/>
                         <ItemPopular imageUri={require
-                    ('./assets/img4.png')}
+                    ('../../assets/img4.png')}
                     genre="Fantasy"
                     name="Fate Grand/Order"/>
                 
@@ -77,7 +77,7 @@ export class App extends Component {
                 <Image style={{flex: 1,width: null, height: null, 
                 resizeMode: 'cover', marginHorizontal:10,
             marginBottom: 20, borderRadius: 5}}
-                source={require('./assets/img1.jpg')}></Image>
+                source={require('../../assets/img1.jpg')}></Image>
             </View>
             </View>
             </ScrollView>
